@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
-const port = 5000;
-//app.use(express.json());
+const port = 5001;
+app.use(express.json());
+const {check, validationResult} = require("express-validator");
 
 // List of Users
 let users = [
